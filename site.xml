@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/clp_feature_1.0.0.jar" id="clp_feature" version="1.0.0">
+      <category name="composite-launching"/>
+   </feature>
+   <category-def name="composite-launching" label="Composite Launching"/>
+</site>
