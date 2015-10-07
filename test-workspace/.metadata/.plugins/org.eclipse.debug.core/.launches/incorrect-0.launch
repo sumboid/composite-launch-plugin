@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="composite.launch">
+<stringAttribute key="config.type" value="cl"/>
+<listAttribute key="configs">
+<listEntry value="dummy-1-10"/>
+</listAttribute>
+</launchConfiguration>

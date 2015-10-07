@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point="org.eclipse.debug.core.launchConfigurationTypes">
+       <launchConfigurationType
+	   	   id="composite.launch"
+		   name="Composite Launch"
+		   delegate="clp.launch.composite.LaunchDelegate"
+		   modes= "run, debug"
+		   sourceLocatorId="org.eclipse.jdt.launching.sourceLocator.JavaSourceLookupDirector"
+	       sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer">
+	   </launchConfigurationType>
+   </extension>
+   <extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+     <launchConfigurationTabGroup
+        type="composite.launch"
+        class="clp.launch.manager.LaunchTabGroup"
+        id="composite.launch.tabGroup">
+     </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         id="clp.views"
+         point="org.eclipse.ui.views">
+      <view id="clp.view.cm"
+	        name="Composite Manager"
+	        class="clp.launch.views.CMView"/>
+   </extension>
+
+</plugin>
